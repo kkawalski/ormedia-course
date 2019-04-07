@@ -1,0 +1,29 @@
+li = list(map(int, input().split()))
+
+if len(li)==len(set(li)):
+    print('ERROR')
+else:
+    print('yes')
+
+for i in range(len(li)):
+    if sum(li)==2*li[i]:
+        print('yes')
+        break
+
+print(sum([i for i in range(15)]))
+
+Days = [
+    'Monday', 
+    'Tuesday', 
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Sunday',
+    ]
+Numbers = list(range(1, 8))
+Status = ['Working' for i in range(5)] + ['Weekend', 'Weekend']
+
+Week = dict(zip(Days, tuple(zip(Numbers, Status))))
+
+print(Week)
