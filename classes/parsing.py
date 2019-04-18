@@ -16,10 +16,14 @@ def main():
 	needed = 'Йен'
 	for course in courses:
 		if needed in course['Cur_Name']:
-			print("За {} курс {} BYN за {} {}".format(course['Date'][:10],
-													course['Cur_OfficialRate'],
-													course['Cur_Scale'],
-													course['Cur_Abbreviation']))
+			print(
+				"За {} курс {} BYN за {} {}".format(
+					course['Date'][:10],
+					course['Cur_OfficialRate'],
+					course['Cur_Scale'],
+					course['Cur_Abbreviation']
+					)
+			)
 			pass
 	print('Error')
 
